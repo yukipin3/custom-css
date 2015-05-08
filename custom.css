@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@charset  "UTF-8";
 
 body {
 	font-size: 16px;
@@ -93,7 +93,7 @@ input[type="reset"]:focus {
 	font-family: "Titillium Web", sans-serif;
 	line-height: 1.25;
 	padding: 10px 0;
-	letter-spacing: 0.03em;
+	letter-spacing: .03em;
 }
 
 .site-header .site-title:hover {
@@ -147,7 +147,7 @@ div#navbar {
 }
 
 .entry-header, .entry-content, .entry-summary, .entry-meta {
-	max-width: 960;
+	max-width: 960px;
 }
 
 .entry-title {
@@ -227,7 +227,7 @@ div#navbar {
 }
 
 .teaser-about > dl > dd {
-	margin: 0 0 0.5em 6em;
+	margin: 0 0 .5em 6em;
 }
 
 .teaser-sns {
@@ -326,7 +326,6 @@ div#navbar {
 	left: auto !important;
 	top: auto !important;
 	-webkit-transform: none !important;
-	-moz-transfomr: none !important;
 	-ms-transform: none !important;
 	transform: none !important;
 	background: #fff;
@@ -393,14 +392,17 @@ div#navbar {
 	min-height: 500px;
 }
 
-#secondary.sidebar-container #text-2 {
+#secondary.sidebar-container #text-2,
+#secondary.sidebar-container #text-4 {
 	width: 100%;
 	margin-top: 40px;
 	text-align: center;
 }
 
 #secondary.sidebar-container #text-2 .widget-title,
-#secondary.sidebar-container #text-2 .textwidget {
+#secondary.sidebar-container #text-2 .textwidget,
+#secondary.sidebar-container #text-4 .widget-title,
+#secondary.sidebar-container #text-4 .textwidget {
 	color: #333;
 	font-style: normal;
 	font-size: 16px;
@@ -408,13 +410,21 @@ div#navbar {
 	margin: 0 1em;
 }
 
+#secondary.sidebar-container > #text-2 > .sponsor-head {
+	width: 100%;
+}
+
 #twitter-widget-0 {
 	height: 410px;
 	overflow: auto;
 }
 
-@media (max-width: 1000px) {
+.sponsor-banner-img {
+	padding-left: auto;
+	padding-right: auto;
+}
 
+@media (max-width: 1000px) {
 	.teaser-mail input.email {
 		width: 100%;
 	}
@@ -439,11 +449,9 @@ div#navbar {
 		float: none;
 		margin: 40px auto;
 	}
-
 }
 
 @media (max-width: 800px) {
-
 	.teaser-about > h2 {
 		float: none;
 		width: auto;
@@ -457,34 +465,30 @@ div#navbar {
 		padding: 1em;
 		margin-bottom: 0;
 	}
-
 }
 
 @media (max-width: 643px) {
-
 	#content .entry-header,
-	#content .entry-content,
-	#content .entry-summary,
-	#content footer.entry-meta,
-	#content .featured-gallery,
-	.search.sidebar .page-content,
-	.blog.sidebar .page-content,
-	.sidebar .post-navigation .nav-links,
-	.paging-navigation .nav-links,
-	#content .author-info,
-	.comments-area .comments-title,
-	.comments-area .comment-list,
-	.comments-area .comment-navigation,
-	.comment-respond,
-	.sidebar .site-info,
-	.sidebar .paging-navigation .nav-links {
+		#content .entry-content,
+		#content .entry-summary,
+		#content footer.entry-meta,
+		#content .featured-gallery,
+		.search.sidebar .page-content,
+		.blog.sidebar .page-content,
+		.sidebar .post-navigation .nav-links,
+		.paging-navigation .nav-links,
+		#content .author-info,
+		.comments-area .comments-title,
+		.comments-area .comment-list,
+		.comments-area .comment-navigation,
+		.comment-respond,
+		.sidebar .site-info,
+		.sidebar .paging-navigation .nav-links {
 		padding: 0;
 	}
-
 }
 
 @media (max-width: 500px) {
-
 	.hentry {
 		padding-left: 20px;
 		padding-right: 20px;
@@ -520,4 +524,7 @@ div#navbar {
 		width: auto;
 	}
 
+	#secondary.sidebar-container > #text-2 > .sponsor-head {
+		width: 100%;
+	}
 }
