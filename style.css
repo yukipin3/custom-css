@@ -1,0 +1,69 @@
+#masthead a.home-link {
+    max-width: none;
+    background-image: url(http://localhost/wckansai2015/wp-content/uploads/2015/05/site-index.png) , url(http://localhost/wckansai2015/wp-content/uploads/2015/05/site-index-border.png);
+    height: 618px;
+    background-repeat: no-repeat, repeat-x;
+}
+
+h1.site-title {
+    display: none;
+}
+
+h2.site-description {
+    display: none;
+}
+
+form.search-form {
+    display: none;
+}
+
+div#navbar {
+    background-color: #f9d132;
+}
+
+.sidebar .entry-header, .sidebar .entry-content, .sidebar .entry-summary, .sidebar .entry-meta, .sidebar .post-navigation .nav-links {
+  padding: 0!important;
+}
+
+.entry-title a:hover {
+    color: black;
+}
+
+h1.entry-title {
+    font-size: 20px;
+}
+
+
+.entry-title a:visited {
+    color: black;
+}
+
+.entry-meta .date a {
+    color: black;
+}
+
+.entry-meta .categories-links a {
+    color: black;
+}
+
+.entry-meta .author a {
+    color: black;
+}
+
+.nav-menu .menu-item a {
+    color: #096553;
+}
+
+.entry-content h1 {
+    font-size: 28px;
+    border-top: #f9d132 solid;
+    border-bottom: #f9d132 solid;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 16px;
+}
