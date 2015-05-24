@@ -193,6 +193,7 @@ h1, h2, h3, h4, h5, h6 {
 .navbar .nav-menu {
 	padding: 0;
 	text-align: center;
+	font-weight: bold;
 }
 
 @media (max-width: 643px) {
@@ -200,6 +201,7 @@ h1, h2, h3, h4, h5, h6 {
 		text-align: left;
 	}
 }
+
 
 .navbar .nav-menu li:hover a {
 	background: #17af92;
@@ -344,6 +346,9 @@ h1, h2, h3, h4, h5, h6 {
 .site-footer {
 	background: #f9d132;
 }
+.site-footer .widget-title{
+	color: #000;
+}
 
 .site-footer a {
 	color: #212121;
@@ -351,6 +356,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .site-footer .site-info {
 	text-align: center;
+	background: #f9d132;
 }
 
 .googlemaps small {
@@ -596,7 +602,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-size: 80%;
 }
 
-.widget {
+#tertiary .widget {
 	background: none;
 	padding: 0;
 	width: 240px;
@@ -618,6 +624,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #secondary .widget {
 	position: static !important;
+	width: 100%;
 }
 
 #tertiary .widget {
@@ -630,6 +637,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-style: normal;
 	font-size: 24px;
 	font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+	font-weight: bold;
 }
 
 #tertiary .widget .widget-title {
@@ -642,8 +650,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #secondary {
+	margin-top: 40px;
 	background: #FFF;
+	border-top: 3px solid #e7e7e7;
 }
+#secondary aside{
+	position: relative;
+}
+
+
 
 #secondary .widget-area {
 	max-width: 960px;
@@ -733,7 +748,7 @@ h1, h2, h3, h4, h5, h6 {
 .cat-item li a {
 	padding: 15px 30px 15px 0;
 	border-bottom: 1px solid #f9d132;
-	background: url(list-arrow.png) no-repeat;
+	background: url(https://kansai.wordcamp.org/2015/files/2015/05/list-arrow.png) no-repeat;
 }
 
 .ogp {
@@ -773,6 +788,7 @@ h1, h2, h3, h4, h5, h6 {
 		background-position: right top;
 		height: 250px;
 	}
+
 }
 
 @media (max-width: 359px) {
@@ -782,6 +798,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #masthead .home-link h1 {
+	width: 960px;
 	height: 258px;
 	background: url(https://kansai.wordcamp.org/2015/files/2015/05/logo.png) no-repeat center top;
 	-webkit-background-size: contain;
@@ -789,8 +806,27 @@ h1, h2, h3, h4, h5, h6 {
 	-o-background-size: contain;
 	background-size: contain;
 	text-align: center;
-	margin: 0 10px;
+	margin: 0 auto;
 }
+
+/*wapuu*/
+.home #masthead .home-link h1:after {
+  display: block;
+  content: "";
+  position: absolute;
+  overflow: hidden;
+  padding-top: 170px;
+  width: 185px;
+  height: 0;
+  background-image: url("https://kansai.wordcamp.org/2015/files/2015/05/wapuu.png");
+  background-position: 0 0;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  top: 40%;
+  right: 4%;
+  margin-top: -90px;
+}
+
 
 @media (max-width: 767px) {
 	#masthead .home-link h1 {
